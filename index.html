@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Shot By Dick</title>
+  <style type="text/css">
+    body {
+      background-color: black
+    }
+    
+    .full-screen-width {
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      max-width: 100vw;
+      max-height: 100vw;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="shotguy">
+      <img id="shotguyimage" alt="A picture of the guy who got shot by Dick Cheney, and then he apologized" class="full-screen-width" />
+    </div>
+  <script>
+    var images = [
+      "/images/1.jpg",
+      "/images/2.jpg"
+    ]
+  
+    var image = images[Math.floor(Math.random() * images.length)];
+    var imageTag = document.getElementById("shotguyimage");
+    imageTag.src = image;
+  </script>
+  </body>
+</html>
